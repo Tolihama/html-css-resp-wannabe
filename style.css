@@ -71,3 +71,35 @@ img {
 .clear {
   clear: both;
 }
+
+
+/* --------------
+RESPONSIVE 
+-------------- */
+@media screen and (max-width: 419px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  /* Questa parte la metterei fuori dal media query, in quanto regola generale... */
+
+  .row {
+    max-width: 419px;
+    width: 90%;
+  }
+
+  .row > div,
+  .row > div hr {
+    width: 100% !important;
+    margin-top: 80px;
+  }
+
+  div:first-of-type .row {
+    margin-top: 40px;
+  }
+
+  div:last-of-type .row {
+    margin-bottom: 40px;
+  }
+}
