@@ -84,8 +84,12 @@ RESPONSIVE
   }
   /* Questa parte la metterei fuori dal media query, in quanto regola generale... */
 
+  h3 {
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+
   .row {
-    max-width: 419px;
     width: 90%;
   }
 
