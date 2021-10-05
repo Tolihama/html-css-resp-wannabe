@@ -76,7 +76,7 @@ img {
 /* --------------
 RESPONSIVE 
 -------------- */
-@media screen and (max-width: 419px) {
+@media screen and (max-width: 767px) {
   * {
     margin: 0;
     padding: 0;
@@ -93,9 +93,67 @@ RESPONSIVE
     width: 90%;
   }
 
-  .row > div,
-  .row > div hr {
-    width: 100% !important;
+  #lezioni .row > .left,
+  #lezioni .row > .right,
+  #steps .row > .left,
+  #steps .row > .central,
+  #steps .row > .right, 
+  #why .row > .first,
+  #why .row > .second,
+  #why .row > .third,
+  .row hr {
+    width: 100%;
+    margin-top: 80px;
+  }
+
+  div:first-of-type .row {
+    margin-top: 40px;
+  }
+
+  div:last-of-type .row {
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  img {
+    max-width: 90%;
+    max-height: 200px;
+  }
+
+  h3 {
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+
+  .row {
+    width: 90%;
+  }
+
+  #lezioni .row > .left,
+  #lezioni .row > .right {
+    width: 50%;
+    margin-top: 80px;
+  }
+
+  #steps .row > .left,
+  #steps .row > .central,
+  #steps .row > .right {
+    width: calc(100% / 3);
+    margin-top: 80px;
+  }
+
+  #why .row > .first,
+  #why .row > .second,
+  #why .row > .third,
+  .row hr {
+    width: 100%;
     margin-top: 80px;
   }
 
